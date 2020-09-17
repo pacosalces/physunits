@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="physunits", # Replace with your own username
-    version="0.0.2",
+    version="0.0.3",
     author="pacosalces",
     author_email="pacosalces@gmail.com",
     description="Physical units as global variables for simple numerical propagation",
