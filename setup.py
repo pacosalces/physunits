@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="physunits-pkg-pacosalces", # Replace with your own username
+    name="physunits", # Replace with your own username
     version="0.0.1",
     author="pacosalces",
     author_email="pacosalces@gmail.com",
