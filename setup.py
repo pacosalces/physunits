@@ -5,13 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="physunits", # Replace with your own username
-    version="0.0.3",
+    version="0.0.5",
     author="pacosalces",
     author_email="pacosalces@gmail.com",
     description="Physical units as global variables for simple numerical propagation",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/pacosalces/physunits",
+    license='LICENSE.txt',
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
