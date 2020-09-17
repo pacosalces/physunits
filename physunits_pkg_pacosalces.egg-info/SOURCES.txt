@@ -1,7 +1,0 @@
-README.md
-setup.py
-physunits/__init__.py
-physunits_pkg_pacosalces.egg-info/PKG-INFO
-physunits_pkg_pacosalces.egg-info/SOURCES.txt
-physunits_pkg_pacosalces.egg-info/dependency_links.txt
-physunits_pkg_pacosalces.egg-info/top_level.txt
