@@ -4,6 +4,9 @@ Simple package with common physical unit definitions.
 
 ## Installation
 
+Add this package to your existing python environment with pip
+```pip install physunits```, or alternatively follow your distribution specific instructions. 
+
 ## Usage
 
 An example usage of this package is:
@@ -27,3 +30,4 @@ The unit prefixes act as simple globals. If only a set of units is desired, manu
 is sufficient. 
 
 ## Contact and support
+Please fork, contribute, or create an issue directly on the project's [website](https://github.com/pacosalces/physunits)
