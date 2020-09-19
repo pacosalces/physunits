@@ -23,15 +23,15 @@ The package tries to include only the most used unit prefixes, but you can gener
 >> print(f'There are approximately {365*day / hour} hours in a year.')
 There are approximately 8760.0 hours in a year.
 ```
-The unit prefixes act as simple globals. If only a set of units is desired, manually importing them as
+The unit prefixes act as simple globals. If only a subset of the supported units is desired, manually importing them as
 
 ```python
 from physunits import mm, nm, um
 ```
 is good enough. 
 
-## Current supported units
-All units are referenced to the SI. This means that base, derived, freedom (imperial), and other units including prefixes are always relative to the [SI base units](https://www.nist.gov/pml/weights-and-measures/metric-si/si-units). An example where this is manifest is that when imported, the unit ```kg``` takes on the numerical value ```1.0```, regardless of the prefix indicating ```1000 g```.
+## Description
+All units are referenced to the SI. This means that base, derived, freedom (imperial), and other units including prefixes are always relative to the [SI base units](https://www.nist.gov/pml/weights-and-measures/metric-si/si-units). An example where this is manifest is that when imported, the unit ```kg``` takes on the numerical value ```1.0```, regardless of the prefix indicating the numerical factor of ```1000```.
 
 | Unit        |    Supported    |
 | :-------------: |:-------------:|
@@ -49,7 +49,7 @@ All units are referenced to the SI. This means that base, derived, freedom (impe
 | pressure | mPa, Pa, kPa, MPa, atm, psi, Torr, mBar, Bar |
 | rel concentration | ppm, ppb |
 
-
+If you want a unit to be supported, feel free to open an issue.
 
 ## Contact and support
 Please report, fork, test, contribute, or create an issue directly on the project's [repository](https://github.com/pacosalces/physunits).
