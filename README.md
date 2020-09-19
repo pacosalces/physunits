@@ -3,12 +3,10 @@
 Simple package with common physical unit definitions. 
 
 ## Installation
-
 Add this package to your existing python environment with pip
 ```pip install physunits```, or alternatively follow your distribution specific instructions. 
 
 ## Usage
-
 An example usage of this package is:
 ```python
 >> from physunits import *
@@ -25,9 +23,33 @@ The package tries to include only the most used unit prefixes, but you can gener
 >> print(f'There are approximately {365*day / hour} hours in a year.')
 There are approximately 8760.0 hours in a year.
 ```
-The unit prefixes act as simple globals. If only a set of units is desired, manually importing them as:
-``from physunits import mm, nm, um``
-is sufficient. 
+The unit prefixes act as simple globals. If only a set of units is desired, manually importing them as
+
+```python
+from physunits import mm, nm, um
+```
+is good enough. 
+
+## Current supported units
+All units are referenced to the SI. This means that base, derived, freedom (imperial), and other units including prefixes are always relative to the [SI base units](https://www.nist.gov/pml/weights-and-measures/metric-si/si-units). An example where this is manifest is that when imported, the unit ```kg``` takes on the numerical value ```1.0```, regardless of the prefix indicating ```1000 g```.
+
+| Unit        |    Supported    |
+| :-------------: |:-------------:|
+| length      | nm, um, mm, cm, m, km, inch, ft, yd |
+| time      | ps, ns, us, ms, s |
+| mass      | ng, ug, mg, g, kg, lb, oz |
+| temperature | nK, uK, mK, K |
+| angle | deg, rad, mrad |
+| frequency | mHz, Hz, kHz, MHz, GHz, THz |
+| voltage | pV, nV, uV, mV, V, kV |
+| current | nA, uA, mA, A |
+| current | nA, uA, mA, A |
+| energy | mJ, J, kJ | 
+| power | nW, uW, mW, W, kW, MW |
+| pressure | mPa, Pa, kPa, MPa, atm, psi, Torr, mBar, Bar |
+| rel concentration | ppm, ppb |
+
+
 
 ## Contact and support
-Please fork, contribute, or create an issue directly on the project's [website](https://github.com/pacosalces/physunits)
+Please report, fork, test, contribute, or create an issue directly on the project's [repository](https://github.com/pacosalces/physunits).
