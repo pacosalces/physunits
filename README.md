@@ -75,6 +75,7 @@ All units are referenced to the SI. This means that base, derived, freedom (impe
 If you want a unit to be supported, feel free to open an issue.
 
 * We _all_ know that if there was an SI unit for angles, it would be the radian, so in ```physunits```, it takes the value ```rad = 1.0 ```, and degrees are defined relative to it. This works nicely in all trig functions. Special thanks to chrisjbillington for pointing this out.
+
 ** While the electronvolt (```eV```) is not a part of the SI, the SI [recognizes its use](https://en.wikipedia.org/wiki/Non-SI_units_mentioned_in_the_SI). Furthermore, the [latest SI redefinition](https://en.wikipedia.org/wiki/2019_redefinition_of_the_SI_base_units) fixed the value of the electron charge constant, effectively fixing the conversion between ```eV``` and ```J```.
 
 ## Contact and support
