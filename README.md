@@ -59,7 +59,7 @@ All units are referenced to the SI. This means that base, derived, freedom (impe
 | time      | ps, ns, us, ms, s |
 | mass      | ng, ug, mg, g, kg, lb, oz |
 | temperature | nK, uK, mK, K |
-| angle | deg, rad, mrad |
+| angle* | deg, rad, mrad |
 | frequency | mHz, Hz, kHz, MHz, GHz, THz |
 | voltage | pV, nV, uV, mV, V, kV |
 | current | nA, uA, mA, A |
@@ -69,6 +69,8 @@ All units are referenced to the SI. This means that base, derived, freedom (impe
 | rel concentration | ppm, ppb |
 
 If you want a unit to be supported, feel free to open an issue.
+
+* Note: we _all_ know that if there was an SI unit for angles, it would be the radian, so in ```physunits```, it takes the value ```rad = 1.0 ```, and degrees are defined relative to it. This works nicely in all trig functions. Special thanks to chrisjbillington for pointing this out.
 
 ## Contact and support
 Please report, fork, test, contribute, or create an issue directly on the project's [repository](https://github.com/pacosalces/physunits).
