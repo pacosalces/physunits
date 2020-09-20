@@ -13,9 +13,8 @@ km, m, mm, um, nm = np.logspace(3, -9, 5)
 cm = m/100
 
 # angle (technically not SI... why not? because politics?)
-deg = 1.0
-rad = 180 * deg / np.pi
-mrad = 1e-3 * rad
+mrad, rad = np.logspace(-3, 0, 2)
+deg = np.pi * rad / 180
 
 # mass (note the SI convention for base unit)
 ng, ug, mg, g, kg, = np.logspace(-6, 1, 5)
