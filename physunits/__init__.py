@@ -39,7 +39,7 @@ C, mC, uC, nC = np.logspace(0, -9, 4)
 
 # energy
 mJ, J, kJ = np.logspace(-3, 3, 3) * (kg * m**2 / s**2)
-eV = 1.602 176 634e-19 * C
+eV = 1.602176634e-19 * C
 meV = 1e-3 * eV
 keV, MeV, GeV, TeV = np.logspace(3, 12, 4)
 
