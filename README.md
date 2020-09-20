@@ -63,7 +63,6 @@ All units are referenced to the SI. This means that base, derived, freedom (impe
 | frequency | mHz, Hz, kHz, MHz, GHz, THz |
 | voltage | pV, nV, uV, mV, V, kV |
 | current | nA, uA, mA, A |
-| current | nA, uA, mA, A |
 | energy | mJ, J, kJ | 
 | power | nW, uW, mW, W, kW, MW |
 | pressure | mPa, Pa, kPa, MPa, atm, psi, Torr, mBar, Bar |
