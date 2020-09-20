@@ -17,7 +17,7 @@ mrad, rad = np.logspace(-3, 0, 2)
 deg = np.pi * rad / 180
 
 # mass (note the SI convention for base unit)
-ng, ug, mg, g, kg, = np.logspace(-6, 1, 5)
+ng, ug, mg, g, kg, = np.logspace(-9, 0, 5)
 
 # frequency
 mHz, Hz, kHz, MHz, GHz, THz = np.logspace(-3, 12, 6)
@@ -26,7 +26,7 @@ mHz, Hz, kHz, MHz, GHz, THz = np.logspace(-3, 12, 6)
 s, ms, us, ns, ps = np.logspace(0, -12, 5)
 
 # temperature
-nK, uK, mK, K = np.logspace(-3, 0, 4)
+nK, uK, mK, K = np.logspace(-9, 0, 4)
 
 # current
 nA, uA, mA, A = np.logspace(-9, 0, 4)
@@ -34,8 +34,14 @@ nA, uA, mA, A = np.logspace(-9, 0, 4)
 # voltage
 pV, nV, uV, mV, V, kV = np.logspace(-12, 3, 6)
 
+# charge 
+C, mC, uC, nC = np.logspace(0, -9, 4)
+
 # energy
 mJ, J, kJ = np.logspace(-3, 3, 3) * (kg * m**2 / s**2)
+eV = 1.602 176 634e-19 * C
+meV = 1e-3 * eV
+keV, MeV, GeV, TeV = np.logspace(3, 12, 4)
 
 # power
 nW, uW, mW, W, kW, MW = np.logspace(-9, 6, 6) * (J/s)
