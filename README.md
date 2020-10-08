@@ -64,9 +64,10 @@ All units are referenced to the SI. This means that base, derived, freedom (impe
 | voltage | pV, nV, uV, mV, V, kV |
 | charge | C, mC, uC, nC |
 | current | nA, uA, mA, A |
-| resistance | ohm, mohm, kohm, Mohm |
+| resistance | Ohm, mOhm, kOhm, MOhm, GOhm |
 | capacitance | F, mF, uF, nF, pF | 
 | inductance | H, mH, uH, nH |
+| magnetic field strength| T, mT, uT, nT, pT | 
 | energy** | mJ, J, kJ, meV, eV, keV, MeV, GeV, TeV | 
 | power | nW, uW, mW, W, kW, MW |
 | pressure | mPa, Pa, kPa, MPa, atm, psi, Torr, mBar, Bar |
