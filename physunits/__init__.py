@@ -9,15 +9,15 @@ import numpy as np
  ## ##     ####
 
 # length
-km, m, mm, um, nm = np.logspace(3, -9, 5)
+km, m, mm, um, nm, pm, fm = np.logspace(3, -15, 7)
 cm = m/100
 
-# angle (technically not SI... why not? because politics?)
+# angle (technically not SI... why not? #makeradiansaunit)
 mrad, rad = np.logspace(-3, 0, 2)
 deg = np.pi * rad / 180
 
 # mass (note the SI convention for base unit)
-ng, ug, mg, g, kg, = np.logspace(-9, 0, 5)
+ng, ug, mg, g, kg, = np.logspace(-12, 0, 5)
 
 # frequency
 mHz, Hz, kHz, MHz, GHz, THz = np.logspace(-3, 12, 6)
@@ -105,3 +105,6 @@ ppm, ppb = 1e-6, 1e-9
 atm = 101325*Pa
 Torr = 1 / (760*atm)
 Bar, mBar = 1e-5*Pa, 1e-5*mPa
+
+if __name__ in "__main__":
+	print(globals())

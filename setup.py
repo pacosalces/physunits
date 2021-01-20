@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="physunits", # Replace with your own username
-    version="0.0.9",
+    name="physunits",
+    version="0.0.10",
     author="pacosalces",
     author_email="pacosalces@gmail.com",
     description="Physical units as global variables for simple numerical propagation",

@@ -55,7 +55,7 @@ All units are referenced to the SI. This means that base, derived, freedom (impe
 
 | Unit        |    Supported    |
 | :-------------: |:-------------:|
-| length | nm, um, mm, cm, m, km, inch, ft, yd |
+| length | fm, pm, nm, um, mm, cm, m, km, inch, ft, yd |
 | time | ps, ns, us, ms, s |
 | mass | ng, ug, mg, g, kg, lb, oz |
 | temperature | nK, uK, mK, K |
