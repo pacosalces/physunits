@@ -1,7 +1,7 @@
 import numpy as np
-from mass import kg
-from length import m
-from time_units import s
+from .mass import kg
+from .length import m
+from .time_units import s
 
 # SI
 mPa, Pa, kPa, MPa = np.logspace(-3, 6, 4) * (kg / m / s**2)

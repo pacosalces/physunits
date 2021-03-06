@@ -1,8 +1,8 @@
 import numpy as np
-from mass import kg
-from length import m
-from time_units import s
-from electromagnetic import C
+from .mass import kg
+from .length import m
+from .time_units import s
+from .electromagnetic import C
 
 # SI
 mJ, J, kJ = np.logspace(-3, 3, 3) * (kg * m**2 / s**2)
