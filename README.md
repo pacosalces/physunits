@@ -7,30 +7,34 @@ Add this package to your existing python environment with pip
 ```pip install physunits```, or alternatively follow your distribution specific instructions. 
 
 ## Usage
-An example usage of this package is:
+
+### Example 1
+An example usage is:
 ```python
->> from physunits import *
+>> from physunits.length import *
 >> print(f"{1000 * cm / um:.2f} is how many microns there are in a thousand centimeters")
 10000000.00 is how many microns there are in a thousand centimeters
 ```
+Note that in the above, only the ``` physunits.length ``` module is imported (new feature in version 1.0.0), so no other untits like time units, or pressure units will be available. It is possible to import all available units, as shown in the following examples. If only a subset of the supported units is desired, manually importing them as
 
-The package tries to include only the most used unit prefixes, but you can generate other units, for example:
 ```python
->> from physunits import *
+from physunits.length import mm, nm, um
+```
+
+### Example 2
+```physunits``` includes the most widely used unit prefixes, but you can generate other units, for example:
+```python
+>> from physunits.time_units import s
 >> minute = 60 * s
 >> hour = 60 * minute
 >> day = 24 * hour
 >> print(f'There are approximately {365*day / hour} hours in a year.')
 There are approximately 8760.0 hours in a year.
 ```
-The unit prefixes act as simple globals. If only a subset of the supported units is desired, manually importing them as
-
-```python
-from physunits import mm, nm, um
-```
+Units are simple ``` float ``` objects meant to make physics code more readable, and physical units more tracktable. 
 is good enough. 
 
-Another example where physunits may be useful is illustrated by the following script dealing with a voltage trace:
+Another example where physunits may be useful is illustrated by the following script dealing with a voltage trace simulation:
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -56,7 +60,7 @@ All units are referenced to the SI. This means that base, derived, freedom (impe
 | Unit        |    Supported    |
 | :-------------: |:-------------:|
 | length | fm, pm, nm, um, mm, cm, m, km, inch, ft, yd |
-| time | ps, ns, us, ms, s |
+| time | ps, ns, us, ms, s, minute, hour, day, week |
 | mass | ng, ug, mg, g, kg, lb, oz |
 | temperature | nK, uK, mK, K |
 | angle* | deg, rad, mrad |
@@ -73,7 +77,7 @@ All units are referenced to the SI. This means that base, derived, freedom (impe
 | pressure | mPa, Pa, kPa, MPa, atm, psi, Torr, mBar, Bar |
 | rel concentration | ppm, ppb |
 
-If you want a unit to be supported, feel free to open an issue.
+If you want your favorite unit to be added, please open an issue, or fork and submit a pull request. ``` physunits ``` is always thriving to improve.
 
 * We _all_ know that if there was an SI unit for angles, it would be the radian, so in ```physunits```, it takes the value ```rad = 1.0 ```, and degrees are defined relative to it. This works nicely in all trig functions. Special thanks to chrisjbillington for pointing this out.
 
